@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postări</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Postări</h1>
+  </header>
+  <main>
+    <section>
+    <h2>Postare noua</h2>
+    <form id="post-form">
+        <label for="title">Titlu</label>
+        <input id="title" name="title" type="text" required minlength="3">
+        <label for="body">Content</label>
+        <textarea id="body" name="body" required></textarea>
+
+        <button type="submit">Adauga</button>
+    </form>
+    <p id="form-message" role="alert"></p>
+    </section>
+    <section>
+        <h2>Postari</h2>
+        <p id="list-status"></p>
+        <ul id="post-list"></ul>
+    </section>
+    </main>
+  <footer>
+    <p>Radu, 2026</p>
+  </footer>
+</body>
+</html>
