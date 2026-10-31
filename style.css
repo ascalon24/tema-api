@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+button{
+background-color: red;
+}
+
+header{
+    background-color: yellow;
+}
+body{
+    margin 0;
+    font-family:system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+header,
+main,
+footer{
+    padding:16px;
+
+}
+
+main{
+    max-width:1000px;
+    margin: 0 auto;
+    display:grid;
+    gap:24px;
+}
+
+form{
+    display:flex
+    flex-direction:column;
+    gap: 8px;
+}
+
+input,
+textarea,
+button{
+    width:100%
+    padding: 8px;
+    font:inherit;
+}
+
+#post-list{
+    list-style:none;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+#post-list li{
+    border: 1px solid #ccc;
+    border-radius:6px;
+    padding:12px;
+    overflow-wrap: anywhere;
+}
+
+@media(min-width:768px)
+{
+    main{
+        grid-template-columns: 1fr 2fr;
+    }
+}
